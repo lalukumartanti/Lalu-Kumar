@@ -1,0 +1,343 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <title>Lalu Kumar Tanti | Official Page</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="Official page of Lalu Kumar Tanti — contact, social links and services (Business Promotion, Digital Branding, Social Media Growth)." />
+  <meta name="theme-color" content="#667eea" />
+
+  <!-- Fonts & icons -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="" crossorigin="anonymous" />
+
+  <style>
+    :root{
+      --text:#ffffff;
+      --card-bg: rgba(255,255,255,.15);
+      --glass-blur: 12px;
+      --max-width: 520px;
+      --accent-1: #667eea;
+      --accent-2: #764ba2;
+    }
+
+    /* Basic reset */
+    * { box-sizing: border-box; }
+    html,body { height:100%; }
+    body{
+      margin:0;
+      font-family:'Poppins',system-ui,-apple-system,Segoe UI,Roboto,"Helvetica Neue",Arial;
+      text-align:center;
+      color:var(--text);
+      background:linear-gradient(270deg,var(--accent-1),var(--accent-2),#f7797d,#6a82fb);
+      background-size:800% 800%;
+      animation:bg 20s ease infinite;
+      -webkit-font-smoothing:antialiased;
+      -moz-osx-font-smoothing:grayscale;
+      line-height:1.35;
+      padding-bottom:40px;
+    }
+
+    @keyframes bg{
+      0%{background-position:0% 50%}
+      50%{background-position:100% 50%}
+      100%{background-position:0% 50%}
+    }
+
+    /* Respect user preference for reduced motion */
+    @media (prefers-reduced-motion: reduce) {
+      body { animation: none; }
+      .floating { animation: none; opacity:1; transform:none; }
+    }
+
+    header{
+      padding:36px 20px 10px;
+    }
+
+    /* Profile photo: use an <img> for accessibility (alt text) */
+    .profile-wrapper{
+      width:150px;
+      height:150px;
+      margin:0 auto;
+      border-radius:50%;
+      border:5px solid #fff;
+      box-shadow:0 0 30px rgba(255,255,255,.85);
+      overflow:hidden;
+      background:linear-gradient(135deg, rgba(255,255,255,.06), rgba(255,255,255,.02));
+    }
+    .profile-wrapper img{
+      width:100%;
+      height:100%;
+      object-fit:cover;
+      display:block;
+      vertical-align:middle;
+    }
+
+    h1{
+      margin:12px 0 4px;
+      font-size:28px;
+      font-weight:700;
+    }
+
+    .address{
+      font-size:14px;
+      font-weight:600;
+      background:linear-gradient(45deg,#ff512f,#dd2476,#24c6dc);
+      -webkit-background-clip:text;
+      -webkit-text-fill-color:transparent;
+      margin-bottom:6px;
+    }
+
+    .badge{
+      display:inline-block;
+      margin-top:6px;
+      padding:6px 16px;
+      border-radius:20px;
+      background:rgba(255,255,255,.18);
+      font-size:13px;
+      color: #fff;
+    }
+
+    main {
+      display:flex;
+      justify-content:center;
+      padding:0 16px;
+    }
+
+    .card{
+      width:100%;
+      max-width:var(--max-width);
+      margin:-40px auto 24px;
+      padding:22px;
+      background:var(--card-bg);
+      backdrop-filter:blur(var(--glass-blur));
+      border-radius:20px;
+      box-shadow:0 20px 50px rgba(0,0,0,.35);
+      color:var(--text);
+    }
+
+    .actions {
+      display:flex;
+      flex-direction:column;
+      gap:10px;
+      margin-bottom:8px;
+    }
+
+    .btn{
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      gap:10px;
+      padding:12px;
+      border-radius:14px;
+      font-weight:600;
+      text-decoration:none;
+      color:#fff;
+      transition:transform .18s ease, box-shadow .18s ease;
+      border:0;
+      cursor:pointer;
+      outline: none;
+    }
+    .btn:focus {
+      box-shadow:0 0 0 3px rgba(255,255,255,.14);
+      transform:translateY(-2px);
+    }
+    .btn:hover{ transform:translateY(-3px); }
+
+    /* brand colors */
+    .call{ background:#0a66c2; }
+    .whatsapp{ background:#25D366; color:#fff; }
+    .email{ background:#f39c12; }
+    .instagram{ background:linear-gradient(45deg,#f58529,#dd2a7b,#8134af); }
+    .facebook{ background:#1877f2; }
+    .twitter{ background:#111; }
+    .youtube{ background:#ff0000; }
+    .linkedin{ background:#0a66c2; }
+    .telegram{ background:#0088cc; }
+    .github{ background:#24292e; }
+    .snapchat{ background:#fffc00; color:#000; }
+    .spotify{ background:#1db954; }
+    .threads{ background:linear-gradient(45deg,#ff0080,#7928ca); }
+    .maps{ background:#ff6f61; }
+    .business-map{ background:#ff9b86; }
+    .phonepe{ background:#5f259f; }
+    .gpay{ background:#4285F4; }
+
+    .services{
+      display:grid;
+      grid-template-columns:repeat(2,1fr);
+      gap:10px;
+      margin-top:8px;
+    }
+    .service{
+      padding:10px;
+      border-radius:10px;
+      background:rgba(255,255,255,.08);
+      font-weight:600;
+      font-size:14px;
+    }
+
+    footer{
+      padding:18px 8px 36px;
+      font-size:13px;
+      opacity:.95;
+    }
+
+    .floating{
+      position:fixed;
+      pointer-events:none;
+      font-weight:700;
+      animation:float 2s linear;
+      z-index:9999;
+      will-change:transform,opacity;
+    }
+
+    @keyframes float{
+      to{ transform:translateY(-50px); opacity:0; }
+    }
+
+    /* responsive */
+    @media (max-width:420px){
+      .profile-wrapper{ width:120px; height:120px; }
+      .card{ padding:16px; border-radius:16px; }
+      .services{ grid-template-columns:1fr; }
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <div class="profile-wrapper" aria-hidden="false">
+      <!-- Use an <img> for proper accessibility and allow browsers to lazy-load -->
+      <img src="profile.jpg" alt="Profile photo of Lalu Kumar Tanti" loading="lazy" width="300" height="300" />
+    </div>
+
+    <h1>Lalu Kumar Tanti</h1>
+    <div class="address">Jaipur, Banka, Bihar, India</div>
+    <div class="badge" aria-hidden="true">Official • Verified</div>
+
+    <!-- live-updating time (aria-live) -->
+    <div id="timeDate" aria-live="polite" style="margin-top:8px;font-weight:600;font-size:13px;"></div>
+  </header>
+
+  <main>
+    <section class="card" aria-labelledby="linksHeading">
+      <h2 id="linksHeading" style="position: absolute; left: -9999px; height:1px; overflow:hidden; width:1px;">Contact & Social Links</h2>
+
+      <nav class="actions" aria-label="Contact and social links">
+        <a class="btn call" href="tel:+919771617808" onclick="floatName()" aria-label="Call Lalu Kumar Tanti">
+          <i class="fa-solid fa-phone" aria-hidden="true"></i> Call
+        </a>
+
+        <a class="btn whatsapp" href="https://wa.me/919771617808" target="_blank" rel="noopener noreferrer" onclick="floatName()" aria-label="Open WhatsApp chat">
+          <i class="fa-brands fa-whatsapp" aria-hidden="true"></i> WhatsApp
+        </a>
+
+        <a class="btn email" href="mailto:lalukumartanti75@gmail.com" onclick="floatName()" aria-label="Send email">
+          <i class="fa-solid fa-envelope" aria-hidden="true"></i> Email
+        </a>
+
+        <a class="btn instagram" href="https://www.instagram.com/lalu_kumar_tanti" target="_blank" rel="noopener noreferrer" aria-label="Open Instagram">
+          <i class="fa-brands fa-instagram" aria-hidden="true"></i> Instagram
+        </a>
+
+        <a class="btn facebook" href="https://www.facebook.com/lalukumartantii" target="_blank" rel="noopener noreferrer" aria-label="Open Facebook">
+          <i class="fa-brands fa-facebook" aria-hidden="true"></i> Facebook
+        </a>
+
+        <a class="btn twitter" href="https://x.com/LaluKumarTanti" target="_blank" rel="noopener noreferrer" aria-label="Open X (Twitter)">
+          <i class="fa-brands fa-x-twitter" aria-hidden="true"></i> X
+        </a>
+
+        <a class="btn youtube" href="https://www.youtube.com/@Lalu_Kumar_Tanti" target="_blank" rel="noopener noreferrer" aria-label="Open YouTube channel">
+          <i class="fa-brands fa-youtube" aria-hidden="true"></i> YouTube
+        </a>
+
+        <a class="btn linkedin" href="https://in.linkedin.com/in/lalu-kumar-tanti-540185351" target="_blank" rel="noopener noreferrer" aria-label="Open LinkedIn">
+          <i class="fa-brands fa-linkedin" aria-hidden="true"></i> LinkedIn
+        </a>
+
+        <a class="btn telegram" href="https://t.me/Lalu_kumar_tanti_0" target="_blank" rel="noopener noreferrer" aria-label="Open Telegram">
+          <i class="fa-brands fa-telegram" aria-hidden="true"></i> Telegram
+        </a>
+
+        <a class="btn github" href="https://github.com/lalukumartanti" target="_blank" rel="noopener noreferrer" aria-label="Open GitHub">
+          <i class="fa-brands fa-github" aria-hidden="true"></i> GitHub
+        </a>
+
+        <a class="btn snapchat" href="https://www.snapchat.com/add/lalu_kumar77" target="_blank" rel="noopener noreferrer" aria-label="Open Snapchat">
+          <i class="fa-brands fa-snapchat" aria-hidden="true"></i> Snapchat
+        </a>
+
+        <a class="btn spotify" href="https://open.spotify.com/user/31c4utsldd2omujkcxyjbrwgvnou" target="_blank" rel="noopener noreferrer" aria-label="Open Spotify profile">
+          <i class="fa-brands fa-spotify" aria-hidden="true"></i> Spotify
+        </a>
+
+        <a class="btn threads" href="https://www.threads.com/@lalu_kumar_tanti" target="_blank" rel="noopener noreferrer" aria-label="Open Threads">
+          <i class="fa-brands fa-threads" aria-hidden="true"></i> Threads
+        </a>
+
+        <a class="btn maps" href="https://maps.app.goo.gl/BeG2PYziNmuQ85L7A" target="_blank" rel="noopener noreferrer" aria-label="Open Google Maps location">
+          <i class="fa-solid fa-location-dot" aria-hidden="true"></i> Google Maps
+        </a>
+
+        <a class="btn business-map" href="https://maps.app.goo.gl/DvQjApJQStwhEsmTA" target="_blank" rel="noopener noreferrer" aria-label="Open Business Map">
+          <i class="fa-solid fa-location-dot" aria-hidden="true"></i> Business Map
+        </a>
+
+        <!-- UPI handlers: some devices handle 'upi://' links, but they won't work on many desktop browsers.
+             Consider providing a QR or redirect page as a fallback for cross-platform payment. -->
+        <a class="btn phonepe" href="upi://pay?pa=9771617808-2@ybl&pn=Lalu%20Kumar%20Tanti&cu=INR&am=1" aria-label="Pay ₹1 via PhonePe">
+          <i class="fa-solid fa-wallet" aria-hidden="true"></i> PhonePe ₹1
+        </a>
+
+        <a class="btn gpay" href="upi://pay?pa=9771617808-2@axl&pn=Lalu%20Kumar%20Tanti&cu=INR&am=1" aria-label="Pay ₹1 via Google Pay">
+          <i class="fa-brands fa-google-pay" aria-hidden="true"></i> Google Pay ₹1
+        </a>
+      </nav>
+
+      <h3 style="margin-top:14px; margin-bottom:8px;">Services</h3>
+      <ul class="services" aria-label="Services offered">
+        <li class="service">Business Promotion</li>
+        <li class="service">Digital Branding</li>
+        <li class="service">Social Media Growth</li>
+        <li class="service">Online Support</li>
+      </ul>
+    </section>
+  </main>
+
+  <footer>
+    <small>© 2026 Lalu Kumar Tanti | All Rights Reserved</small>
+  </footer>
+
+  <script>
+    // Floating name effect: respects reduced-motion and doesn't spam the DOM
+    function floatName() {
+      if (matchMedia && matchMedia('(prefers-reduced-motion: reduce)').matches) return;
+      const f = document.createElement('div');
+      f.className = 'floating';
+      f.style.left = Math.max(8, Math.random() * (window.innerWidth - 120)) + 'px';
+      f.style.top = Math.max(8, Math.random() * (window.innerHeight - 60)) + 'px';
+      f.style.color = `hsl(${Math.random()*360},90%,60%)`;
+      f.textContent = 'Lalu Kumar Tanti 😄';
+      document.body.appendChild(f);
+      setTimeout(() => f.remove(), 1800);
+    }
+
+    // Update time display using locale-aware formatting
+    (function updateClock() {
+      const el = document.getElementById('timeDate');
+      if (!el) return;
+      function tick() {
+        const now = new Date();
+        // short time and date, will respect user's locale
+        const time = now.toLocaleTimeString();
+        const date = now.toLocaleDateString(undefined, { weekday: 'short', year: 'numeric', month: 'short', day: 'numeric' });
+        el.textContent = `${time} • ${date}`;
+      }
+      tick();
+      setInterval(tick, 1000);
+    })();
+  </script>
+</body>
+</html>
